@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Instagram, Phone, MapPin, Send } from 'lucide-react';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -37,12 +37,12 @@ export default function Contact() {
                         <h3 className="text-2xl font-semibold mb-6 text-gray-800">Let's Start a Conversation</h3>
                         <div className="space-y-6">
                             <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                                <div className="bg-blue-100 p-3 rounded-full">
-                                    <Mail className="w-6 h-6 text-blue-600" />
+                                <div className="bg-pink-100 p-3 rounded-full">
+                                    <Instagram className="w-6 h-6 text-pink-600" />
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-gray-800">Email</h4>
-                                    <p className="text-gray-600">john@example.com</p>
+                                    <h4 className="font-semibold text-gray-800">Instagram</h4>
+                                    <p className="text-gray-600">@john.example</p>
                                 </div>
                             </div>
                             

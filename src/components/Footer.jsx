@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -25,7 +25,9 @@ export default function Footer() {
                             <a href="https://github.com/Arull-rill">
                                 <Github className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer transition-colors" />
                             </a>
-                            <Linkedin className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer transition-colors" />
+                            <a href="https://www.instagram.com/rull_rill/">
+                                <Instagram className="w-6 h-6 text-gray-300" />
+                            </a>
                             <Mail className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer transition-colors" />
                         </div>
                     </div>

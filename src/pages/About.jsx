@@ -11,10 +11,10 @@ export default function About() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h3 className="text-2xl font-semibold mb-6">Hello! I'm John Portfolio</h3>
+                        <h3 className="text-2xl font-semibold mb-6">Hello! I'm Sahrul Portfolio</h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Saya adalah seorang developer yang passionate dalam menciptakan pengalaman digital yang luar biasa. 
-                            Dengan pengalaman lebih dari 3 tahun di bidang web development, saya telah membantu berbagai klien 
+                            Dengan pengalaman kurang dari 3 tahun di bidang web development, saya telah membantu berbagai klien 
                             mewujudkan visi digital mereka.
                         </p>
                         <p className="text-gray-600 mb-8 leading-relaxed">
@@ -24,15 +24,15 @@ export default function About() {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="flex items-center space-x-2">
                                 <Mail className="w-5 h-5 text-blue-600" />
-                                <span className="text-gray-600">john@example.com</span>
+                                <span className="text-gray-600">jhonbinusepjhon@gmail.com</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Phone className="w-5 h-5 text-blue-600" />
-                                <span className="text-gray-600">+62 123-456-7890</span>
+                                <span className="text-gray-600">+62 891-1250-9319</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <MapPin className="w-5 h-5 text-blue-600" />
-                                <span className="text-gray-600">Jakarta, Indonesia</span>
+                                <span className="text-gray-600">Bandung, Indonesia</span>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ export default function About() {
                                 <Code className="w-8 h-8 text-blue-600 mr-3" />
                                 <h4 className="text-xl font-semibold">Frontend Development</h4>
                             </div>
-                            <p className="text-gray-600">React, Vue.js, JavaScript, TypeScript, Tailwind CSS</p>
+                            <p className="text-gray-600">PHP, React, Vue.js, JavaScript, Tailwind CSS</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-lg">
                             <div className="flex items-center mb-4">
