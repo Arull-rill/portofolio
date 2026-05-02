@@ -11,6 +11,10 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const scrollTo = (id) => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
             isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-white shadow-md'
@@ -20,10 +24,10 @@ export default function Navbar() {
                     MyPortfolio
                 </h1>
                 <div className="space-x-6">
-                    <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Home</a>
-                    <a href="/about" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">About</a>
-                    <a href="/projects" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Projects</a>
-                    <a href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Contact</a>
+                    <button onClick={() => scrollTo('home')} className="text-gray-700 hover:text-blue-600 transition-colors duration-200 bg-transparent border-none cursor-pointer">Home</button>
+                    <button onClick={() => scrollTo('about')} className="text-gray-700 hover:text-blue-600 transition-colors duration-200 bg-transparent border-none cursor-pointer">About</button>
+                    <button onClick={() => scrollTo('projects')} className="text-gray-700 hover:text-blue-600 transition-colors duration-200 bg-transparent border-none cursor-pointer">Projects</button>
+                    <button onClick={() => scrollTo('contact')} className="text-gray-700 hover:text-blue-600 transition-colors duration-200 bg-transparent border-none cursor-pointer">Contact</button>
                 </div>
             </div>
         </nav>
