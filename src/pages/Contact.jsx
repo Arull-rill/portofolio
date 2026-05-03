@@ -42,7 +42,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-gray-800">Instagram</h4>
-                                    <p className="text-gray-600">@john.example</p>
+                                    <p className="text-gray-600">@rull_rill</p>
                                 </div>
                             </div>
                             

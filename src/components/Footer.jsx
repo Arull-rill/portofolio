@@ -28,7 +28,9 @@ export default function Footer() {
                             <a href="https://www.instagram.com/rull_rill/">
                                 <Instagram className="w-6 h-6 text-gray-300" />
                             </a>
-                            <Mail className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer transition-colors" />
+                            <a href="https://www.linkedin.com/in/sahrul-hidayat-818217401/?skipRedirect=true">
+                                <Linkedin className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer transition-colors" />
+                            </a>
                         </div>
                     </div>
                 </div>

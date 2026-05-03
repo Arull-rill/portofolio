@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Code, Palette, Smartphone } from 'lucide-react';
 
-export default function About() {
+export default function Tentang() {
     return (
         <section id="about" className="py-20 bg-white">
             <div className="container mx-auto px-6">

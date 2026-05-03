@@ -12,9 +12,6 @@ export default function App() {
       <Navbar />
       <div className="pt-20">
         <Home />
-        <About />
-        <Projects />
-        <Contact />
       </div>
       <Footer />
     </>

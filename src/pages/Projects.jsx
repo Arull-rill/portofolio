@@ -3,54 +3,10 @@ import { Star, ExternalLink } from 'lucide-react';
 
 export default function Projects() {
     const projects = [
-        {
-            id: 1,
-            title: "E-Commerce Platform",
-            description: "Platform e-commerce modern dengan fitur lengkap dan user experience yang optimal.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-            tags: ["React", "Node.js", "MongoDB"],
-            rating: 5
-        },
-        {
-            id: 2,
-            title: "Mobile Banking App",
-            description: "Aplikasi mobile banking yang aman dan mudah digunakan dengan fitur AI.",
-            image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-            tags: ["React Native", "Firebase", "AI"],
-            rating: 5
-        },
-        {
-            id: 3,
-            title: "Dashboard Analytics",
-            description: "Dashboard analytics yang powerful untuk monitoring bisnis real-time.",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-            tags: ["Vue.js", "D3.js", "Python"],
-            rating: 4
-        },
-        {
-            id: 4,
-            title: "Food Delivery App",
-            description: "Aplikasi food delivery dengan real-time tracking dan payment integration.",
-            image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=400&fit=crop",
-            tags: ["Flutter", "Firebase", "Maps API"],
-            rating: 5
-        },
-        {
-            id: 5,
-            title: "Learning Management System",
-            description: "Platform pembelajaran online dengan video streaming dan quiz interactive.",
-            image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop",
-            tags: ["React", "Express", "PostgreSQL"],
-            rating: 4
-        },
-        {
-            id: 6,
-            title: "Social Media Dashboard",
-            description: "Dashboard untuk mengelola multiple social media accounts dalam satu tempat.",
-            image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-            tags: ["Next.js", "GraphQL", "Redis"],
-            rating: 5
-        }
+        { id: 1, title: 'Sistem Kasir Futsal', description: 'Aplikasi kasir berbasis web untuk manajemen transaksi futsal, lengkap dengan fitur CRUD dan laporan sederhana.', image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop', tags: ['PHP', 'MySQL', 'JavaScript'], rating: 5 },
+        { id: 2, title: 'Quiz App Interaktif', description: 'Aplikasi quiz berbasis web dengan sistem skor dan interaksi real-time.', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop', tags: ['JavaScript', 'HTML', 'CSS'], rating: 4 },
+        { id: 3, title: 'Linktree Custom', description: 'Halaman personal linktree dengan desain modern untuk menampilkan semua link penting.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop', tags: ['React', 'Tailwind'], rating: 4 },
+        { id: 4, title: 'TalkEd', description: 'Aplikasi forum yang memungkinkan pengguna untuk membuat postingan, memberikan komentar, serta berinteraksi melalui fitur like dan dislike.', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=400&fit=crop', tags: ['PHP', 'Bootstrap'], rating: 4 },
     ];
 
     return (
@@ -67,8 +23,8 @@ export default function Projects() {
                     {projects.map((project) => (
                         <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                             <div className="relative overflow-hidden">
-                                <img 
-                                    src={project.image} 
+                                <img
+                                    src={project.image}
                                     alt={project.title}
                                     className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
                                 />
