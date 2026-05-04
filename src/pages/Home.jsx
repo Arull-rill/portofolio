@@ -52,28 +52,28 @@ const CodeIcon = () => (
 // ── Data ──────────────────────────────────────────────────────────────
 const PROJECTS = [
   {
-    id: 1, title: 'Sistem Kasir Futsal',
-    description: 'Aplikasi kasir berbasis web untuk manajemen transaksi futsal, lengkap dengan fitur CRUD dan laporan sederhana.',
+    id: 1, title: 'Futsal Cashier System',
+    description: 'A web-based cashier application for managing futsal transactions, complete with CRUD features and simple reporting.',
     image: 'src/assets/Screenshot (143).png',
-    tags: ['PHP', 'MySQL', 'JavaScript'], rating: 5,
+    tags: ['Laravel', 'JavaScript'], rating: 5,
   },
   {
-    id: 2, title: 'Quiz App Interaktif',
-    description: 'Aplikasi quiz berbasis web dengan sistem skor dan interaksi real-time.',
+    id: 2, title: 'Interactive Quiz App',
+    description: 'A web-based quiz application with a scoring system and real-time interaction.',
     image: 'src/assets/Screenshot (30).png',
-    tags: ['JavaScript', 'HTML', 'CSS'], rating: 4,
+    tags: ['Laravel', 'JavaScript'], rating: 4,
   },
   {
-    id: 3, title: 'Linktree Custom',
-    description: 'Halaman personal linktree dengan desain modern untuk menampilkan semua link penting.',
+    id: 3, title: 'Custom Linktree',
+    description: 'A personal linktree page with a modern design to showcase all important links in one place.',
     image: 'src/assets/Screenshot (139).png',
-    tags: ['React', 'Tailwind'], rating: 4,
+    tags: ['HTML', 'CSS', 'JavaScript'], rating: 4,
   },
   {
     id: 4, title: 'TalkEd',
-    description: 'Aplikasi forum yang memungkinkan pengguna membuat postingan, komentar, serta berinteraksi melalui fitur like dan dislike.',
+    description: 'A forum application that allows users to create posts, leave comments, and interact through like and dislike features.',
     image: 'src/assets/Screenshot (138).png',
-    tags: ['PHP', 'Bootstrap'], rating: 4,
+    tags: ['PHP', 'CSS', 'JavaScript', 'Bootstrap'], rating: 4,
   },
 ];
 
@@ -182,7 +182,7 @@ function Hero() {
         </p>
 
         <p style={{ fontSize: 15, color: '#6b7280', maxWidth: 460, margin: '0 auto 32px', lineHeight: 1.8 }}>
-          Saya berfokus pada pengembangan web, dengan pengalaman membangun aplikasi yang responsif dan user-friendly.
+          I focus on web development, with experience building responsive and user-friendly applications.
         </p>
 
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -191,14 +191,14 @@ function Hero() {
             border: 'none', padding: '11px 26px', borderRadius: 999,
             fontSize: 14, fontWeight: 600, cursor: 'pointer',
           }}>
-            Lihat Projects
+            View Projects
           </button>
           <button onClick={() => scrollToSection('contact')} style={{
             background: 'transparent', color: '#374151',
             border: '1.5px solid #d1d5db', padding: '11px 26px', borderRadius: 999,
             fontSize: 14, fontWeight: 600, cursor: 'pointer',
           }}>
-            Hubungi Saya
+            Contact Me
           </button>
         </div>
 
@@ -222,7 +222,7 @@ function About() {
   return (
     <section id="about" style={{ padding: '90px 24px', background: '#ffffff' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-        <SectionHeader title="Tentang Saya" />
+        <SectionHeader title="About Me" />
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'start' }}>
 
           <div>
@@ -230,12 +230,11 @@ function About() {
               Hello! I'm Sahrul Hidayat
             </h3>
             <p style={{ color: '#6b7280', lineHeight: 1.85, fontSize: 15, marginBottom: 14 }}>
-              Saya seorang Junior Web Developer yang fokus belajar dan berkembang di dunia programming.
-              Sudah pernah mengerjakan beberapa project seperti sistem kasir, quiz app, dan forum diskusi.
+              I'm a Junior Web Developer focused on learning and growing in the world of programming.
+              I've worked on several projects including a cashier system, a quiz app, and a discussion forum.
             </p>
             <p style={{ color: '#6b7280', lineHeight: 1.85, fontSize: 15, marginBottom: 28 }}>
-              Saya percaya bahwa kode yang baik bukan hanya tentang bagaimana ia berjalan, tapi bagaimana
-              ia memberikan nilai nyata bagi pengguna.
+              I believe that good code isn't just about how it runs, but about how it delivers real value to its users.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {info.map(({ icon, text }, i) => (
@@ -262,7 +261,7 @@ function About() {
               ))}
             </div>
             <div style={{ marginTop: 22, paddingTop: 20, borderTop: '1px solid #f1f5f9' }}>
-              <p style={{ fontSize: 13, fontWeight: 600, color: '#374151', marginBottom: 10 }}>Sedang diperdalam</p>
+              <p style={{ fontSize: 13, fontWeight: 600, color: '#374151', marginBottom: 10 }}>Currently deepening</p>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                 {['Laravel', 'Vue.js', 'REST API'].map(t => (
                   <span key={t} style={{ padding: '5px 12px', borderRadius: 999, fontSize: 12, background: '#eff6ff', color: '#3b82f6', fontWeight: 500 }}>
@@ -284,7 +283,7 @@ function Projects() {
   return (
     <section id="projects" style={{ padding: '90px 24px', background: '#f8fafc' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-        <SectionHeader title="My Projects" sub="Beberapa project yang telah saya kerjakan dengan serius dan penuh dedikasi." />
+        <SectionHeader title="My Projects" sub="A selection of projects I've worked on with dedication and care." />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 24 }}>
           {PROJECTS.map(p => <ProjectCard key={p.id} {...p} />)}
         </div>
@@ -349,7 +348,7 @@ function Contact() {
   return (
     <section id="contact" style={{ padding: '90px 24px', background: '#ffffff' }}>
       <div style={{ maxWidth: 680, margin: '0 auto' }}>
-        <SectionHeader title="Get In Touch" sub="Punya pertanyaan atau mau kolaborasi? Hubungi saya lewat salah satu channel berikut." />
+        <SectionHeader title="Get In Touch" sub="Have a question or want to collaborate? Reach me through any of the channels below." />
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
           {contacts.map(({ icon, bg, color, label, value }, i) => (
             <div key={i} style={{
@@ -373,7 +372,7 @@ function Contact() {
         </div>
         <div style={{ marginTop: 20, background: 'linear-gradient(135deg,#eff6ff,#faf5ff)', borderRadius: 14, padding: '16px 20px', textAlign: 'center' }}>
           <p style={{ fontSize: 13, fontWeight: 600, color: '#374151', marginBottom: 4 }}>⏱ Response Time</p>
-          <p style={{ fontSize: 13, color: '#6b7280' }}>Biasanya saya membalas dalam 24 jam di hari kerja.</p>
+          <p style={{ fontSize: 13, color: '#6b7280' }}>I usually reply within 24 hours on weekdays.</p>
         </div>
       </div>
     </section>
@@ -410,6 +409,7 @@ export default function App() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

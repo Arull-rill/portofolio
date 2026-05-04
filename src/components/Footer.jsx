@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-3 gap-8">
                     <div>
                         <h3 className="text-xl font-bold mb-4">MyPortfolio</h3>
-                        <p className="text-gray-300">Membuat solusi digital yang inovatif dan berdampak.</p>
+                        <p className="text-gray-300">Create innovative and impactful digital solutions.</p>
                     </div>
                     <div>
                         <h4 className="font-semibold mb-4">Quick Links</h4>
@@ -35,7 +35,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                    © 2025 MyPortfolio. Dibuat dengan React + Tailwind.
+                    © 2025 MyPortfolio. Created With React + Tailwind.
                 </div>
             </div>
         </footer>
